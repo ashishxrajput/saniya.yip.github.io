@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Stars</title>
+  <link rel="stylesheet" href="love2.css">
+</head>
+<body>
+  <div class="love-stars-game">
+    <h1>⭐ Collect the Stars of Love ⭐</h1>
+    <p>Help the heart collect all the stars to unlock a special surprise! 💖</p>
+
+    <!-- Game Area -->
+    <div class="game-area" id="game-area">
+      <!-- Heart (player) -->
+      <div class="heart" id="heart"></div>
+
+      <!-- Stars -->
+      <div class="star" style="top: 10%; left: 20%;" id="star-1"></div>
+      <div class="star" style="top: 20%; left: 70%;" id="star-2"></div>
+      <div class="star" style="top: 30%; left: 40%;" id="star-3"></div>
+      <div class="star" style="top: 50%; left: 60%;" id="star-4"></div>
+      <div class="star" style="top: 60%; left: 30%;" id="star-5"></div>
+      <div class="star" style="top: 70%; left: 80%;" id="star-6"></div>
+      <div class="star" style="top: 40%; left: 10%;" id="star-7"></div>
+      <div class="star" style="top: 80%; left: 50%;" id="star-8"></div>
+      <div class="star" style="top: 20%; left: 90%;" id="star-9"></div>
+      <div class="star" style="top: 10%; left: 60%;" id="star-10"></div>
+    </div>
+
+    <!-- Final Message -->
+    <div class="hidden">
+      <h2>✨ You've Collected All the Stars! ✨</h2>
+      <p>
+        Saniya, you’ve unlocked my heart. Will you marry me? 💍  
+        Let’s start a beautiful journey together! 🌹
+      </p>
+      <button onclick="location.href='qna.html'">💖 QnA Saniya Babu 💖</button>
+    </div>
+  </div>
+
+  <!-- Message Card -->
+  <div class="message-card hidden" id="message-card">
+    <div class="message-content" id="message-content"></div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <p>Move the heart using the buttons below!</p>
+    <button onclick="moveHeart('up')">⬆️ Up</button>
+    <div>
+      <button onclick="moveHeart('left')">⬅️ Left</button>
+      <button onclick="moveHeart('down')">⬇️ Down</button>
+      <button onclick="moveHeart('right')">➡️ Right</button>
+    </div>
+  </div>
+
+  <script src="love2.js"></script>
+</body>
+</html>

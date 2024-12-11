@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Game</title>
+  <link rel="stylesheet" href="love.css">
+</head>
+<body>
+  <div class="love-game">
+    <h1>💖 Find Your Way to My Heart 💖</h1>
+    <p>Guide the glowing heart to the flower to unlock the final surprise!</p>
+
+    <!-- Game Container -->
+    <div class="game-container">
+      <div class="maze" id="maze">
+        <div class="cell" id="cell-0"></div>
+        <div class="cell" id="cell-1"></div>
+        <div class="cell" id="cell-2"></div>
+        <div class="cell flower" id="cell-3"></div>
+        <div class="cell" id="cell-4"></div>
+        <div class="cell heart" id="cell-5"></div>
+        <div class="cell" id="cell-6"></div>
+        <div class="cell" id="cell-7"></div>
+        <div class="cell" id="cell-8"></div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button onclick="moveHeart('up')">⬆️</button>
+      <div>
+        <button onclick="moveHeart('left')">⬅️</button>
+        <button onclick="moveHeart('down')">⬇️</button>
+        <button onclick="moveHeart('right')">➡️</button>
+      </div>
+    </div>
+
+    <!-- Final Message -->
+    <div class="final-message hidden">
+      <h2>🌹 You've Found My Heart! 🌹</h2>
+      <p>Will you marry me, Saniya? 💍</p>
+      <button onclick="location.href='love_game2.html'">Play Love Game 2 🎮</button>
+    </div>
+  </div>
+
+  <script src="love.js"></script>
+</body>
+</html>

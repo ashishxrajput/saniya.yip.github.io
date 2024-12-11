@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal for Saniya</title>
+  <link rel="stylesheet" href="proposal.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="romantic-tune.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Floating Decorations -->
+  <div id="floating-decorations"></div>
+
+  <!-- Wishes Section -->
+  <div class="proposal-section">
+    <h1 class="wish-heading">💖 Happy Birthday Again, Saniya! 💖</h1>
+    <p class="wish-text">
+      You’re the most special person in my life, and this moment is all about you.  
+      Every smile, every memory, and every heartbeat has led to this day.  
+      Now, I have something very special to ask... 💕
+    </p>
+  </div>
+
+  <!-- Proposal Section -->
+  <div class="interactive-proposal">
+    <h2 class="proposal-question">Will You Marry Me? 💍</h2>
+    <div class="options">
+      <button onclick="revealYes()">Yes 💖</button>
+      <button onclick="revealNo()">No 😔</button>
+    </div>
+  </div>
+
+  <!-- Yes Reveal Section -->
+  <div class="yes-reveal hidden">
+    <h1 class="response-heading">🎉 You Said Yes! 🎉</h1>
+    <p class="response-text">
+      This is the happiest moment of my life!  
+      Thank you for being my everything. Here’s to forever with you! 💕💍  
+    </p>
+    <p class="emoji">💐🎈❤️</p>
+  </div>
+
+  <!-- No Reveal Section -->
+  <div class="no-reveal hidden">
+    <h1 class="response-heading">😔 You Said No...</h1>
+    <p class="response-text">
+      That’s okay. You’ll always be the most special person to me. 💔  
+      Thank you for letting me try. 🌹
+    </p>
+  </div>
+
+  <!-- Back to Memories Button -->
+  <div class="back-to-memories hidden">
+    <button onclick="location.href='love_game.html'">🌟 Play Love Game 🎮 🌟</button>
+  </div>
+
+  <script src="proposal.js"></script>
+</body>
+</html>

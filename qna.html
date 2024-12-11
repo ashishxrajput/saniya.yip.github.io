@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Q&A Game</title>
+  <link rel="stylesheet" href="qna.css">
+</head>
+<body>
+  <div class="love-qna">
+    <h1>💖 Love Q&A Game 💖</h1>
+    <p>Let’s see how well we know each other, Saniya! 🌹</p>
+    <div id="question-container" class="hidden">
+      <h2 id="question"></h2>
+      <div class="answers">
+        <button onclick="checkAnswer(0)" id="btn0"></button>
+        <button onclick="checkAnswer(1)" id="btn1"></button>
+        <button onclick="checkAnswer(2)" id="btn2"></button>
+        <button onclick="checkAnswer(3)" id="btn3"></button>
+      </div>
+    </div>
+    <div id="result-container" class="hidden">
+      <h2>✨ Your Score: <span id="score"></span> / <span id="total"></span> ✨</h2>
+      <p id="final-message"></p>
+    </div>
+    <button id="start-btn" onclick="startGame()">Start the Game</button>
+  </div>
+
+  <script src="qna.js"></script>
+</body>
+</html>

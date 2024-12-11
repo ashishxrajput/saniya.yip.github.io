@@ -1,0 +1,103 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: radial-gradient(circle, #ff99c8, #ff77a9, #ff5588);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: floralwhite;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.love-stars-game {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.game-area {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  border: 2px solid #ff69b4;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background: #ff69b4;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+  transform: translate(-50%, -50%);
+}
+
+.star {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 235, 59, 0.8);
+}
+
+.final-message {
+  margin-top: 20px;
+  display: none;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #ff4081;
+}
+
+.message-card {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.message-card .message-content {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}

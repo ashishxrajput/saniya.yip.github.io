@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff99cc, #ff6699);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1, h2 {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.proposal-section {
+  margin-top: 5%;
+}
+
+.wish-heading {
+  font-size: 4rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.wish-text {
+  font-size: 1.8rem;
+  margin: 1rem auto;
+  max-width: 80%;
+  line-height: 1.8;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 1.5s ease-in-out 0.5s;
+}
+
+/* Proposal Section */
+.interactive-proposal {
+  margin: 3rem 0;
+  animation: fadeIn 2s ease-in-out 1s;
+}
+
+.proposal-question {
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.options button {
+  background: #ffd700;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.options button:hover {
+  transform: scale(1.1);
+  background-color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Reveal Sections */
+.hidden {
+  display: none;
+}
+
+.response-heading {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.response-text {
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  max-width: 80%;
+  line-height: 1.8;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.back-to-memories button {
+  background: #ff1493;
+  color: #fff;
+  border: none;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.back-to-memories button:hover {
+  transform: scale(1.1);
+  background-color: #ff69b4;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+/* Animation for fading in elements */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating Decorations */
+#floating-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#floating-decorations .balloon, 
+#floating-decorations .heart {
+  position: absolute;
+  animation: float 10s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+#floating-decorations .balloon {
+  width: 50px;
+  height: 70px;
+  background: url('balloon.png') no-repeat center / contain;
+  border-radius: 50%;
+}
+
+#floating-decorations .heart {
+  width: 100px;
+  height: 100px;
+  background: url('balloon.png') no-repeat center / contain;
+}
+
+/* Keyframe for Floating Animation */
+@keyframes float {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-10vh); }
+}
