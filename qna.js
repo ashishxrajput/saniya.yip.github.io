@@ -2,20 +2,20 @@ const questions = [
   {
     question: "Where did we first meet? 💞",
     answers: ["At a park", "On Instagram", "At a café", "At a wedding"],
-    correct: 1,
+    correct: 2,
   },
   {
     question: "What is my favorite thing about you? 🌹",
     answers: ["Your smile", "Your kindness", "Your voice", "Everything"],
-    correct: 3,
+    correct: 4,
   },
   {
-    question: "What’s the most special thing we did together? 🎉",
+    question: "What's my favourite",
     answers: [
-      "Watched a movie",
-      "Went for a long walk",
-      "Planned surprises for each other",
-      "Celebrated our monthly anniversaries",
+      "Daal Chawal",
+      "Momos",
+      "doldappe 😄",
+      "you😋",
     ],
     correct: 2,
   },
@@ -27,7 +27,7 @@ const questions = [
       "A bond like no other",
       "All of the above",
     ],
-    correct: 3,
+    correct: 4,
   },
   {
     question: "What’s my dream for us in the future? 💍",
