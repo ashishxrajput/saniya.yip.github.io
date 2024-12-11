@@ -17,7 +17,7 @@ const questions = [
       "doldappe 😄",
       "you😋",
     ],
-    correct: 2,
+    correct: 4,
   },
   {
     question: "How do I describe our relationship? 🥰",
