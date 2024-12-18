@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Welcome Message -->
+        <div id="welcome-message" class="message">
+            <h1>Welcome to the Friendship Game!🎮</h1>
+            <p>Match the cards and prove your friendship. Let's start!</p>
+            <button id="start-game-btn" class="game-btn">Start Game</button>
+        </div>
+
+        <!-- Game Section (Initially hidden) -->
+        <div id="game-section" class="game-section" style="display:none;">
+            <h2>Match the Cards</h2>
+            <div id="cards-container" class="cards-container">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+            <button id="restart-game-btn" class="game-btn" style="display:none;">Restart Game</button>
+        </div>
+
+        <!-- Congratulations Section (Initially hidden) -->
+        <div id="congratulations-section" class="message" style="display:none;">
+            <h2> 🎉congratulations 🎉, Best Friend!💗</h2>
+            <p>You matched all the cards!😸 Here's your Best Friend Certificate:</p>
+            <img src="certificate.jpg" alt="Best Friend Certificate" class="certificate-img">
+            <button id="restart-btn" class="game-btn">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

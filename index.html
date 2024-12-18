@@ -1,74 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Saniya</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ayushi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="edit.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+    <!-- Sky Blue Aesthetic Page -->
+    <div class="container">
+        <!-- Starting Section -->
+        <div class="intro-section">
+            <h1>To the Kindest Friend</h1>
+            <p>Every moment spent with you is a beautiful memory, Ayushi.</p>
+        </div>
+        
+        <!-- Hinata Hyuga Figure -->
+        <div class="hinata-section">
+            <img src="hinata.png" alt="Hinata Hyuga" class="hinata-figure">
+        </div>
 
-  <!-- Floating Decorations -->
-  <div id="floating-decorations">
-    <!-- Dynamic decorations will appear here -->
-  </div>
+        <!-- Surprise Message -->
+        <div class="surprise-message">
+            <p class="hidden-message">💙 Thank you for being my Hinata, my loyal and kind friend! 💙</p>
+        </div>
 
-  <!-- Starting Question Section -->
-  <div class="interactive-start">
-    <p class="question">
-      🎉 Do you know what's special today? 🎉
-    </p>
-    <div class="options">
-      <button onclick="revealYes()">Yes 😇</button>
-      <button onclick="revealNo()">No 🤔</button>
+        <!-- Animated Button to Reveal Surprise -->
+        <button id="reveal-btn">Tap for a Surprise</button>
+
+        <!-- Friendship Game Button (Hidden Initially) -->
+        <button id="friendship-game-btn" class="game-btn" style="display:none;">Start Friendship Game</button>
     </div>
-  </div>
 
-  <!-- Yes Reveal Section -->
-  <div class="yes-reveal hidden">
-    <h1>🎂 Happy Birthday, Saniya! 🎂</h1>
-    <p>
-      🥳 Today is all about celebrating the most amazing person I know.  
-      You bring so much joy, love, and beauty to the world.  
-      Here's to making your special day as magical as you are! ✨💖
-    </p>
-    <p class="emoji">🎈🎁💐</p>
-  </div>
-
-  <!-- No Reveal Section -->
-  <div class="no-reveal hidden">
-    <h1>❤️ It's Your Day, Saniya! ❤️</h1>
-    <p>
-      It's the birthday of the most beautiful, kind-hearted girl, Saniya!  
-      You light up my life and everyone around you.  
-      Let’s make this day unforgettable—just like you are! 🌹🌟
-    </p>
-  </div>
-
-  <!-- Photos/Videos Section -->
-  <div class="photos-videos hidden">
-    <h2>💖 Cherished Memories 💖</h2>
-    <div class="slider">
-      <img src="saniya1.jpg" alt="Memory 1" class="slide">
-      <img src="saniya2.jpg" alt="Memory 2" class="slide">
-      <img src="saniya3.jpg" alt="Memory 3" class="slide">
-      <img src="saniya4.jpg" alt="memory 4" class="slide">
-      <img src="saniya1.jpg" alt="memory 5" class="slide">
-    </div>
-    <button class="btn-prev">⏪</button>
-    <button class="btn-next">⏩</button>
-  </div>
-
-  <!-- See Surprise Button -->
-  <div class="surprise-btn hidden">
-    <button onclick="location.href='proposal.html'">💝 See Your Surprise 💍</button>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
